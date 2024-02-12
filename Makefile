@@ -29,6 +29,12 @@ all: build
 run: all
 	./$(TARGET)
 
+doxygen: cleandoc
+	doxygen doc/Doxyfile
+
+cleandoc:
+	rm -rf doc/html doc/latex
+
 clean: 
 	rm -rf $(BUILD_DIR)/
 	rm -rf $(TARGET)

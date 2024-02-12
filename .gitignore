@@ -54,3 +54,5 @@ compile_commands.json
 
 build/
 .vscode/
+doc/html
+doc/latex
