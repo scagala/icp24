@@ -19,12 +19,12 @@ OBJECTS = $(SOURCES:.cpp=.o) # mby useless idk
 BUILD_DIR = build
 
 # Default target
+all: build
+	cd build && $(QMAKE) && $(MAKE) && cp $(TARGET) ../
+
 build: clean
 	mkdir $(BUILD_DIR)
 	cp $(SOURCES) $(HEADERS) $(PROJ) $(FORMS) $(BUILD_DIR)/
-
-all: build
-	cd build && $(QMAKE) && $(MAKE) && cp $(TARGET) ../
 
 run: all
 	./$(TARGET)
