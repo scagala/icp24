@@ -12,7 +12,7 @@ INC_PATH = include
 
 SOURCES = $(SRC_PATH)/*.cpp
 HEADERS = $(INC_PATH)/*.h
-FORMS   = *.ui
+FORMS   = $(INC_PATH)/*.ui
 PROJ    = $(TARGET).pro
 OBJECTS = $(SOURCES:.cpp=.o) # mby useless idk
 
