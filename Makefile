@@ -9,10 +9,11 @@ TARGET = icp24
 # Source files
 SRC_PATH = src
 INC_PATH = include
+FOR_PATH = forms
 
 SOURCES = $(SRC_PATH)/*.cpp
 HEADERS = $(INC_PATH)/*.h
-FORMS   = $(INC_PATH)/*.ui
+FORMS   = $(FOR_PATH)/*.ui
 PROJ    = $(TARGET).pro
 OBJECTS = $(SOURCES:.cpp=.o) # mby useless idk
 

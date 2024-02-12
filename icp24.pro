@@ -14,7 +14,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
-    simulator.ui
+    mainwindow.ui
 
 
 TARGET = icp24
